@@ -2,4 +2,4 @@
 Personal Page
 
 - content
-- - style
+- style
