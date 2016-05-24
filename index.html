@@ -1,20 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>PORTFOLIO</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/sanitize.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
-    <div class="contenedor">
-        <h1>Hi, I'am Virginia Valderrabano</h1>
-        <h3>Publicist + Art Director + Web Designer</h3>
-        <p><strong>E-mail:</strong> lavirshon@gmail.com</p>
-        <p><strong>Phone:</strong> +39 324 905 0054</p>
-        <p><strong>Portfolio:</strong><a href="https://www.behance.net/vv-ad" target="_blank"> www.behance.net/vv-ad</a></p>
+<body> 
+    
+    <a href="#content">Skip to content</a>
+    
+    <!--wrap around the whole site-->
+    <div class="wrapper">
+        <header>
+            <!--logo stuff-->
+            <a href="/" class="logo">
+                <img src="img/logo.png" alt="VirVal" />
+                <h2>Virginia Valderrabano</h2>
+            </a>
+            
+            <!--navigation-->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--projects starts here-->
+        <section id="content" class="projects">
+            
+            <!--projects page-->
+            <h1>PROJECTS</h1>
+            
+            <article>
+                <a href="#">
+                    <img src="img/project.jpg" alt="" />
+                    <h3>Project Title</h3>
+                    <p>Project Description</p>
+                </a>
+            </article>
+            
+            <article>
+                <a href="#">
+                    <img src="img/project.jpg" alt="" />
+                    <h3>Project Title</h3>
+                    <p>Project Description</p>
+                </a>
+            </article>
+        </section>
+        
+        <!--single project starts here-->
+        <section class="project">
+            <h1>Project Title</h1>
+            <p>Project Description</p>
+            <img src="img/project.jpg" alt="" />
+            <a href="http://www.project.com" class="extrenal-link"> Visit the Website</a>
+        </section>
+        
+        <!--CV starts here-->
+        <section id="cv">
+            <h1>Virginia Valderrabano</h1>
+            <p>My description</p>
+            <p>bla bla..</p>
+            
+            <h3>thing iam good at..</h3>
+            <ul>
+                <li>Good at..</li>
+                <li>Good at..</li>
+                <li>Good at..</li>
+                <li>Good at..</li>
+            </ul>
+            
+            <h3>work experience</h3>
+            <ul>
+                <li>lastest</li>
+                <li>older</li>
+            </ul>
+            
+            <h3>education</h3>
+            <ul>
+                <li>lastest</li>
+                <li>older</li>
+            </ul>
+            <p>bla bla..</p>
+            
+            <h3>social media</h3>
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Linkedin</a></li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>Copyright &copy; 2016 | Virginia Valderrabano <a href="mailto:lavirshon@gmail.com">Contact</a></p>
+            
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Linkedin</a></li>
+            </ul>
+        </footer>
     </div>
-   
+    
 </body>
 
 </html>
