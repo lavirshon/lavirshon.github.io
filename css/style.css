@@ -225,15 +225,9 @@ header nav ul li a:hover {
     text-decoration: none;
    }
 
-#about li .skills{
+#about .nodot li{
     text-decoration: none;
     list-style: none;
-    list-style-position: inside;
-    font-size: 18px;
-    margin-bottom: 5px;
-    margin-left: 20px;
-    color: black;
-    text-decoration: none;
    }
 
 #about #WorkExperience li{
