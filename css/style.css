@@ -8,7 +8,6 @@ body {
     width: 100%;
    	font-family: 'Work Sans', sans-serif;
     color: black;
-    border: 5px solid yellow;
     margin-top: 200px;
 }
 .logo {
@@ -129,6 +128,13 @@ header nav ul li a:hover {
     margin: 0;
     margin-left: 90px;
 }
+
+.gwm{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 90px;
+  
+   }
 
 #projects div {
     font-size: 18px;
@@ -260,6 +266,7 @@ header nav ul li a:hover {
 
 #contact {
     width: 850px;
+    height: 810px;
     margin: 0 auto;
     margin-top: 40px;
     font-family: 'Work Sans', sans-serif;
@@ -343,7 +350,6 @@ footer a{
 footer a i{
     margin: 0 auto;
     padding: 10px;
-    padding-bottom: 0;
     text-decoration: none;
     color: white;
 }
@@ -358,9 +364,9 @@ footer a i{
 }
 
 .bigbox h3{
-    margin-bottom: 20px;
-    margin-left: 0;
-    font-size: 30px;   
+    margin: 40px;
+    font-size: 30px; 
+    text-decoration: underline;
 }
 
 .description{
