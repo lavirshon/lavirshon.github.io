@@ -9,6 +9,7 @@ body {
    	font-family: 'Work Sans', sans-serif;
     color: black;
     border: 5px solid yellow;
+    margin-top: 200px;
 }
 .logo {
     width: 250px;
@@ -34,10 +35,14 @@ h1 {
     text-align: left;
 }
 
-header nav {
+header {
     width: 100%;
     position: fixed;
     top: 0;
+    background-color: white;
+}
+
+header nav {
     text-align: center;
 }
 
