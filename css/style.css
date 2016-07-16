@@ -463,41 +463,101 @@ footer a i{
 
 @media (max-width: 700px) {
 
+.body  {
+    margin: 0 auto;
+    width: 100%;
+   }
+    
+header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+    
 header nav ul li a {
     font-size: 18px;
 }
-
+    
+header nav ul li {
+    display:block;
+    text-align: center;
+    margin: 2px;
+  }
+    
+.container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0;
+   }
+    
 /*START - LITTLE DESCRIPTION*/
-
-.start{
-    width: 450px;
+    
+.start {
+    width: 250px;
+    margin-top: 50px;
     border: 8px double magenta;
+    display: flex;
+    flex-flow: column;
 }
 
+.start i {
+    margin-right: 10px;
+   }
+
+.start img {
+    width: 235px;
+   }
+
 .right{
-    font-size: 30px;
+    width: 235px;
+    font-size: 21px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 .right .small{    
-    font-size: 21px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: left;
+    margin-left: 10px;
 }
 
 /*PROJECTS VIEW*/
-
+    
 #projects {
-    width: 650px;
+    width: 250px;
+    height: auto;
+    margin-top: 50px
 }
 
+#projects .boxes {
+    width:  250px;
+    margin: 0 auto;
+}
+
+#projects img {
+    width: 250px;
+    height: 250px;
+}     
+
+
 #projects h2 {
-    font-size: 28px;
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
 }
 
 .gwm{
-    font-size: 18px;  
+    font-size: 18px; 
+    margin: 0;
+    padding: 0;
    }
 
 #projects div {
-    font-size: 16px;    
+    margin: 10px 0 10px 0;
 }
 
 .boxes div p {
@@ -511,64 +571,184 @@ header nav ul li a {
 /*ABOUT - CV*/
 
 #about {
-    width: 650px;
+    width: 250px;
+    height: auto;
+    margin-top: 50px;
 }
 .about {
-    width: 650px;    
+    width: 250px;
+    border: 4px double cyan;
 }
 
 #about h2 {
-    font-size: 28px;
+    font-size: 21px;
 }
 
 #about .CV{
-    font-size: 18px;
+    font-size: 16px;
    }
 
 #about .PD {
-    font-size: 20px;
+    font-size: 18px;
    }
 
 #about h3 {
-    font-size: 21px;
+    font-size: 20px;
    }
 
 #about p {
-    font-size: 16px;
+    font-size: 14px;
    }
 
 #about li{
-    font-size: 16px;
-   }  
-
+    font-size: 14px;
+   } 
+    
 /*CONTACT*/
 
 #contact {
-    width: 650px;
+    width: 250px;
+    height: auto;
+    margin-top: 50px;
+    
 }
 
 #contact h2 {
-    font-size: 28px;
+    font-size: 21px;
+    margin-bottom: 20px;
 }
 
 .contact {
-    width: 650px;
-    border: 5px double yellow;
+    width: 250px;
+    height: 340px;
+    border: 4px double yellow;
+    
 }
     
 .contact h3 {
-  font-size: 24px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .contact h4 {
-  font-size: 18px;
+  font-size: 16px;
+  padding: 0;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .contact p {
-  font-size: 16px;
+  font-size: 14px;
+  padding: 0;
+  margin-left: 8px;
+  line-height: 30px;
+}
+
+/*FOOTER*/
+
+footer {
+    margin-top: 50px;
+}
+
+
+footer p{
+    font-size: 12px;
+}
+
+footer a i{
+    padding: 5px;
+}
+    
+/*SAMSUNG*/
+
+.bigbox{
+    width: 250px;
+    display: flex;
+    flex-flow: column;
+}
+
+.bigbox h3{
+    margin:0 auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 21px; 
+}
+
+.description{
+    width:250px;
+    border-left: 1px solid cyan;
+    font-size: 14px; 
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.design{
+    width: 250px;
+}
+
+.insidebox {
+    width: 100%;
+}
+
+.design img {
+    width: 250px;
+    margin-top: 10px;
+    margin: 5px;
+} 
+    
+.design video {
+    width: 250px;
+    margin-top: 10px;
+    margin: 5px;
+} 
+    
+/* --------ATM-------- */
+
+.design .kiosk{
+    width: 250px;
+    margin-bottom: 5px;
+}
+
+.design .atmcel {
+    margin-bottom: 20px;
+} 
+
+
+/* --------MOOD by Christofle-------- */
+
+.design .mood{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+
+/* --------CachoPan-------- */
+
+.design .cacho{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+
+/* --------Braccialini-------- */
+
+.design .braccia{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+
+/* --------Animated Menu-------- */
+
+.design .menuhb{
+    width: 250px;
+    margin-bottom: 20px;
 }
   
     }
+    
 
 
 
