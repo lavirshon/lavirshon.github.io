@@ -576,6 +576,22 @@ header nav ul li a {
     margin: 0 auto;
     width: 100%;
    }
+
+.logo img {
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 50px;
+}
+
+.logo h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h1 {
+	font-size: 18px;
+   
+}
     
 header {
     width: 100%;
@@ -584,20 +600,28 @@ header {
 }
     
 header nav ul li a {
-    font-size: 20px;
+    font-size: 18px;
 }
     
 header nav ul li {
     display:block;
     text-align: center;
-    margin: 5px;
-}
+    margin: 2px;
+  }
+    
+.container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0;
+   }
     
 /*START - LITTLE DESCRIPTION*/
     
 .start {
     width: 250px;
-    margin-top: 150px;
+    margin-top: 50px;
     border: 8px double magenta;
     display: flex;
     flex-flow: column;
@@ -609,14 +633,6 @@ header nav ul li {
 
 .start img {
     width: 235px;
-   }
-
-.container {
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    padding: 0;
    }
 
 .right{
@@ -639,6 +655,7 @@ header nav ul li {
 #projects {
     width: 250px;
     height: auto;
+    margin-top: 50px
 }
 
 #projects .boxes {
@@ -681,7 +698,7 @@ header nav ul li {
 #about {
     width: 250px;
     height: auto;
-    margin-bottom: 20px;
+    margin-top: 50px;
 }
 .about {
     width: 250px;
@@ -717,13 +734,13 @@ header nav ul li {
 #contact {
     width: 250px;
     height: auto;
-    margin-bottom: 50px;
+    margin-top: 50px;
     
 }
 
 #contact h2 {
     font-size: 21px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .contact {
@@ -754,6 +771,11 @@ header nav ul li {
 }
 
 /*FOOTER*/
+
+footer {
+    margin-top: 50px;
+}
+
 
 footer p{
     font-size: 12px;
