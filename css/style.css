@@ -788,6 +788,50 @@ footer p{
 footer a i{
     padding: 5px;
 }
+    
+/*SAMSUNG*/
+
+.bigbox{
+    width: 250px;
+    display: flex;
+    flex-flow: column;
+}
+
+.bigbox h3{
+    margin:0 auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 21px; 
+}
+
+.description{
+    width:250px;
+    border-left: 1px solid cyan;
+    font-size: 14px; 
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.design{
+    width: 250px;
+}
+
+.insidebox {
+    width: 100%;
+}
+
+.design img {
+    width: 250px;
+    margin-top: 10px;
+    margin: 5px;
+} 
+    
+.design video {
+    width: 250px;
+    margin-top: 10px;
+    margin: 5px;
+} 
 
   
     }
