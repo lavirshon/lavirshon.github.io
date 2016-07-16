@@ -100,6 +100,7 @@ header nav ul li a:hover {
     margin-top: 40px;
     border: 10px double magenta;
     display: flex;
+    flex-flow: row;
 }
 
 .start i {
@@ -109,6 +110,7 @@ header nav ul li a:hover {
 .left {
     margin: 0;
     float: left;
+    width: 40%;
 }
 
 .right{
@@ -116,6 +118,7 @@ header nav ul li a:hover {
     font-size: 35px;
     margin-left: 20px;
     float: right;
+    width: 60%;
 }
 
 .right .small{    
@@ -151,7 +154,6 @@ header nav ul li a:hover {
 #projects div {
     font-size: 18px;
     margin: 10px;
-    
 }
 
 #projects img {
@@ -568,60 +570,122 @@ header nav ul li a {
 
 /* --------------MOBILE SIZE------------------------------- */
 
-@media (max-width: 375px)) {
+@media (max-width: 500px) {
 
+.body  {
+    margin: 0 auto;
+    width: 100%;
+   }
+    
+header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+    
 header nav ul li a {
-    font-size: 14px;
+    font-size: 20px;
+}
+    
+header nav ul li {
+    display:block;
+    text-align: center;
+    margin: 5px;
 }
     
 /*START - LITTLE DESCRIPTION*/
-
-.start{
+    
+.start {
     width: 250px;
-    border: 5px double magenta;
+    margin-top: 150px;
+    border: 8px double magenta;
+    display: flex;
+    flex-flow: column;
 }
 
+.start i {
+    margin-right: 10px;
+   }
+
+.start img {
+    width: 235px;
+   }
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0;
+   }
+
 .right{
-    font-size: 20px;
+    width: 235px;
+    font-size: 21px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 .right .small{    
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: left;
+    margin-left: 10px;
 }
-    
-/*PROJECTS VIEW*/
 
+/*PROJECTS VIEW*/
+    
 #projects {
-    width: 350px;
+    width: 250px;
+    height: auto;
 }
+
+#projects .boxes {
+    width:  250px;
+    margin: 0 auto;
+}
+
+#projects img {
+    width: 250px;
+    height: 250px;
+}     
+
 
 #projects h2 {
     font-size: 21px;
+    margin: 0;
+    padding: 0;
 }
 
 .gwm{
-    font-size: 16px;  
+    font-size: 18px; 
+    margin: 0;
+    padding: 0;
    }
 
 #projects div {
-    font-size: 14px;    
+    margin: 10px 0 10px 0;
 }
 
 .boxes div p {
-    font-size: 14px;   
+    font-size: 16px;   
    }
 
 .boxes div p.tit2{    
-    font-size: 12px;   
+    font-size: 14px;   
    }
-    
+
 /*ABOUT - CV*/
 
 #about {
-    width: 350px;
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
 }
 .about {
-    width: 350px;    
+    width: 250px;
+    border: 4px double cyan;
 }
 
 #about h2 {
@@ -651,28 +715,52 @@ header nav ul li a {
 /*CONTACT*/
 
 #contact {
-    width: 350px;
+    width: 250px;
+    height: auto;
+    margin-bottom: 50px;
+    
 }
 
 #contact h2 {
     font-size: 21px;
+    margin-bottom: 30px;
 }
 
 .contact {
-    width: 350px;
+    width: 250px;
+    height: 300px;
     border: 4px double yellow;
+    
 }
     
 .contact h3 {
   font-size: 20px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .contact h4 {
   font-size: 16px;
+  padding: 0;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .contact p {
   font-size: 14px;
+  padding: 0;
+  margin-left: 8px;
+  line-height: 30px;
+}
+
+/*FOOTER*/
+
+footer p{
+    font-size: 12px;
+}
+
+footer a i{
+    padding: 5px;
 }
 
   
