@@ -832,7 +832,49 @@ footer a i{
     margin-top: 10px;
     margin: 5px;
 } 
+    
+/* --------ATM-------- */
 
+.design .kiosk{
+    width: 250px;
+    margin-bottom: 5px;
+}
+
+.design .atmcel {
+    margin-bottom: 20px;
+} 
+
+
+/* --------MOOD by Christofle-------- */
+
+.design .mood{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+
+/* --------CachoPan-------- */
+
+.design .cacho{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+
+/* --------Braccialini-------- */
+
+.design .braccia{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+
+/* --------Animated Menu-------- */
+
+.design .menuhb{
+    width: 250px;
+    margin-bottom: 20px;
+}
   
     }
     
