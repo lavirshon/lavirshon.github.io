@@ -461,53 +461,75 @@ footer a i{
 
 /* --------------TABLET SIZE------------------------------- */
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
 
 .body  {
-    margin: 0 auto;
     width: 100%;
    }
     
 header {
     width: 100%;
-    margin: 0 auto;
-    padding: 0;
+    position: fixed;
+    top: 0;
+    background-color: white;
 }
-    
-header nav ul li a {
-    font-size: 18px;
-}
-    
-header nav ul li {
-    display:block;
+
+header nav {
     text-align: center;
-    margin: 2px;
-  }
-    
-.container {
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
     padding: 0;
-   }
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid yellow;
+    margin-left: -5px;
+}
+
+header nav ul li a {
+    padding: 5px 50px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-bottom: none;
+}
+
+header nav ul li a:hover {
+   border: 2px solid yellow;
+    border-bottom: none;
+}
+    
+.container{
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 20px;
+    flex: 1 0 auto;
+}
+    
     
 /*START - LITTLE DESCRIPTION*/
     
-.start {
-    width: 250px;
-    margin-top: 50px;
-    border: 8px double magenta;
+.start{
+    width: 650px;
+    height: 346px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 10px double magenta;
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
 }
 
 .start i {
     margin-right: 10px;
-   }
-
-.start img {
-    width: 235px;
    }
 
 .right{
@@ -528,21 +550,28 @@ header nav ul li {
 /*PROJECTS VIEW*/
     
 #projects {
-    width: 250px;
+    width: 650px;
     height: auto;
-    margin-top: 50px
+    margin-top: 50px;
 }
 
 #projects .boxes {
-    width:  250px;
-    margin: 0 auto;
+    width:  650px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+   
 }
-
+    
 #projects img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }     
 
+#projects div {
+    margin: 0;
+    margin-bottom: 20px;
+}
 
 #projects h2 {
     font-size: 21px;
@@ -556,10 +585,6 @@ header nav ul li {
     padding: 0;
    }
 
-#projects div {
-    margin: 10px 0 10px 0;
-}
-
 .boxes div p {
     font-size: 16px;   
    }
@@ -571,12 +596,12 @@ header nav ul li {
 /*ABOUT - CV*/
 
 #about {
-    width: 250px;
+    width: 650px;
     height: auto;
     margin-top: 50px;
 }
 .about {
-    width: 250px;
+    width: 650px;
     border: 4px double cyan;
 }
 
@@ -607,7 +632,7 @@ header nav ul li {
 /*CONTACT*/
 
 #contact {
-    width: 250px;
+    width: 650px;
     height: auto;
     margin-top: 50px;
     
@@ -619,7 +644,7 @@ header nav ul li {
 }
 
 .contact {
-    width: 250px;
+    width: 650px;
     height: 340px;
     border: 4px double yellow;
     
@@ -805,6 +830,7 @@ header nav ul li {
     
 .start {
     width: 250px;
+    height: 640px;
     margin-top: 50px;
     border: 8px double magenta;
     display: flex;
