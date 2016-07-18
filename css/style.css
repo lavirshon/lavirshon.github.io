@@ -148,7 +148,7 @@ header nav ul li a:hover {
 }
 
 .gwm{
-    font-size: 20px;
+    font-size: 25px;
     text-transform: uppercase;
     margin-left: 90px;
   
@@ -220,7 +220,7 @@ header nav ul li a:hover {
 }
 
 #about .CV{
-    font-size: 20px;
+    font-size: 25px;
     text-transform: uppercase;
     margin: 0;
   
@@ -400,7 +400,7 @@ footer a i{
     margin: 0;
     float: left;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
     flex-flow: row wrap;
 }
@@ -420,6 +420,7 @@ footer a i{
 .design .kiosk{
     width: 300px;
     margin-bottom: 40px;
+    
 }
 
 .design .atmcel {
@@ -464,7 +465,7 @@ footer a i{
 @media (max-width: 1024px) {
 
 .body  {
-    width: 100%;
+    width: 1024px;
    }
     
 header {
@@ -513,6 +514,10 @@ header nav ul li a:hover {
     margin-top: 200px;
     padding: 20px;
     flex: 1 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
 }
     
     
@@ -533,16 +538,16 @@ header nav ul li a:hover {
    }
 
 .right{
-    width: 235px;
-    font-size: 21px;
+    width: 400px;
+    font-size: 25px;
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
 .right .small{    
-    font-size: 18px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 55px;
     text-align: left;
     margin-left: 10px;
 }
@@ -574,7 +579,7 @@ header nav ul li a:hover {
 }
 
 #projects h2 {
-    font-size: 21px;
+    font-size: 25px;
     margin: 0;
     padding: 0;
 }
@@ -586,7 +591,7 @@ header nav ul li a:hover {
    }
 
 .boxes div p {
-    font-size: 16px;   
+    font-size: 18px;   
    }
 
 .boxes div p.tit2{    
@@ -606,19 +611,19 @@ header nav ul li a:hover {
 }
 
 #about h2 {
-    font-size: 21px;
+    font-size: 25px;
 }
 
 #about .CV{
-    font-size: 16px;
-   }
-
-#about .PD {
     font-size: 18px;
    }
 
+#about .PD {
+    font-size: 16px;
+   }
+
 #about h3 {
-    font-size: 20px;
+    font-size: 16px;
    }
 
 #about p {
@@ -639,7 +644,7 @@ header nav ul li a:hover {
 }
 
 #contact h2 {
-    font-size: 21px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 
@@ -688,29 +693,32 @@ footer a i{
 /*SAMSUNG*/
 
 .bigbox{
-    width: 250px;
+    width: 650px;
     display: flex;
     flex-flow: column;
 }
 
 .bigbox h3{
-    margin:0 auto;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    font-size: 21px; 
+    margin: 20px;
+    font-size: 25px; 
+    text-decoration: underline;
 }
 
 .description{
-    width:250px;
+    width: 300px;
+    margin-bottom: 40px;
     border-left: 1px solid cyan;
-    font-size: 14px; 
-    margin: 0;
-    margin-top: 10px;
-    padding: 0;
+    float: right;
+    padding-left: 5px;
+    font-size: 18px;  
 }
 
 .design{
-    width: 250px;
+    width: 350px;
+    margin: 0;
+    float: left;
+    display:inline-block;
+    
 }
 
 .insidebox {
@@ -718,21 +726,19 @@ footer a i{
 }
 
 .design img {
-    width: 250px;
-    margin-top: 10px;
-    margin: 5px;
+    width: 150px;
+    margin: 10px;
 } 
-    
+
 .design video {
-    width: 250px;
+    width: 300px;
     margin-top: 10px;
     margin: 5px;
-} 
-    
+}
 /* --------ATM-------- */
 
 .design .kiosk{
-    width: 250px;
+    width: 300px;
     margin-bottom: 5px;
 }
 
@@ -744,7 +750,7 @@ footer a i{
 /* --------MOOD by Christofle-------- */
 
 .design .mood{
-    width: 250px;
+    width: 300px;
     margin-bottom: 20px;
 }
 
@@ -752,7 +758,7 @@ footer a i{
 /* --------CachoPan-------- */
 
 .design .cacho{
-    width: 250px;
+    width: 300px;
     margin-bottom: 20px;
 }
 
@@ -760,7 +766,7 @@ footer a i{
 /* --------Braccialini-------- */
 
 .design .braccia{
-    width: 250px;
+    width: 300px;
     margin-bottom: 20px;
 }
 
@@ -768,7 +774,7 @@ footer a i{
 /* --------Animated Menu-------- */
 
 .design .menuhb{
-    width: 250px;
+    width: 300px;
     margin-bottom: 20px;
 }
   
@@ -920,15 +926,15 @@ header nav ul li {
 }
 
 #about .CV{
-    font-size: 16px;
-   }
-
-#about .PD {
     font-size: 18px;
    }
 
+#about .PD {
+    font-size: 16px;
+   }
+
 #about h3 {
-    font-size: 20px;
+    font-size: 16px;
    }
 
 #about p {
