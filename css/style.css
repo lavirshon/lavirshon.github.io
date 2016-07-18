@@ -1,19 +1,26 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
 }
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
     width: 100%;
-   	font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     color: black;
     min-height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -38,7 +45,7 @@ body {
 }
 
 h1 {
-	padding: 5px;
+    padding: 5px;
     color: black;
     font-size: 21px;
     text-align: left;
@@ -81,31 +88,40 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-   border: 2px solid yellow;
+    border: 2px solid yellow;
     border-bottom: none;
 }
 
-.container{
+.container {
     margin: 0 auto;
     margin-top: 200px;
     padding: 20px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
     flex: 1 0 auto;
 }
 
+
 /* --------START - LITTLE DESCRIPTION-------- */
 
-.start{
+.start {
     width: 850px;
     margin: 0 auto;
     margin-top: 40px;
     border: 10px double magenta;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
     flex-flow: row;
 }
 
 .start i {
     margin-right: 10px;
-   }
+}
 
 .left {
     margin: 0;
@@ -113,7 +129,7 @@ header nav ul li a:hover {
     width: 40%;
 }
 
-.right{
+.right {
     margin: 0 auto;
     margin-top: 10px;
     font-size: 35px;
@@ -123,19 +139,24 @@ header nav ul li a:hover {
     width: 60%;
 }
 
-.right .small{    
+.right .small {
     font-size: 30px;
     line-height: 70px;
     text-align: left;
-   
 }
+
 
 /* --------PROJECTS VIEW-------- */
 
 #projects {
     margin: 0 auto;
     width: 1000px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     margin-top: 80px;
 }
@@ -147,12 +168,11 @@ header nav ul li a:hover {
     margin-left: 90px;
 }
 
-.gwm{
+.gwm {
     font-size: 25px;
     text-transform: uppercase;
     margin-left: 90px;
-  
-   }
+}
 
 #projects div {
     font-size: 18px;
@@ -163,19 +183,26 @@ header nav ul li a:hover {
     width: 400px;
     height: 400px;
     border-bottom: 1px solid black;
+    -webkit-transition: opacity .2s ease-in;
     transition: opacity .2s ease-in;
 }
 
 #projects img:hover {
     opacity: 0.6;
-    
 }
 
 .boxes {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
-  
 }
 
 .boxes div {
@@ -186,14 +213,15 @@ header nav ul li a:hover {
     margin-left: 10px;
     font-size: 18px;
     font-weight: 700;
-   }
+}
 
-.boxes div p.tit2{
+.boxes div p.tit2 {
     margin-left: 10px;
     font-size: 14px;
     font-weight: 500;
     color: #454545;
-   }
+}
+
 
 /* --------ABOUT - CV-------- */
 
@@ -202,15 +230,16 @@ header nav ul li a:hover {
     margin-top: 40px;
     width: 850px;
     font-family: 'Work Sans', sans-serif;
-    color: black; 
+    color: black;
 }
+
 .about {
     margin: 0 auto;
     margin-top: 20px;
     width: 850px;
     font-family: 'Work Sans', sans-serif;
     color: black;
-    border: 5px double cyan;    
+    border: 5px double cyan;
 }
 
 #about h2 {
@@ -219,29 +248,28 @@ header nav ul li a:hover {
     margin: 0;
 }
 
-#about .CV{
+#about .CV {
     font-size: 25px;
     text-transform: uppercase;
     margin: 0;
-  
-   }
+}
 
 #about .PD {
     font-size: 24px;
     text-transform: uppercase;
     margin: 0 5px;
-   }
+}
 
 #about i {
     margin-right: 10px;
-   }
+}
 
 #about h3 {
     font-size: 24px;
     text-transform: uppercase;
     margin: 0 5px;
     margin-top: 30px;
-   }
+}
 
 #about p {
     font-size: 18px;
@@ -249,13 +277,14 @@ header nav ul li a:hover {
     margin-left: 20px;
     color: black;
     text-decoration: none;
-   }
-#about p a{
+}
+
+#about p a {
     color: black;
     text-decoration: none;
-   }
+}
 
-#about li{
+#about li {
     text-decoration: none;
     list-style: circle;
     list-style-position: inside;
@@ -264,19 +293,19 @@ header nav ul li a:hover {
     margin-left: 20px;
     color: black;
     text-decoration: none;
-   }
+}
 
-#about .nodot li{
+#about .nodot li {
     text-decoration: none;
     list-style: none;
-   }
+}
 
-#about #WorkExperience li{
+#about #WorkExperience li {
     text-decoration: none;
     list-style: circle;
     list-style-position: inside;
     margin-left: 0px;
-   }
+}
 
 
 /* --------CONTACT-------- */
@@ -288,7 +317,7 @@ header nav ul li a:hover {
     margin-top: 40px;
     margin-bottom: 40px;
     font-family: 'Work Sans', sans-serif;
-    color: black; 
+    color: black;
 }
 
 #contact h2 {
@@ -303,6 +332,8 @@ header nav ul li a:hover {
     margin: 0 auto;
     margin-top: 20px;
     color: black;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     text-align: center;
     border: 8px double yellow;
@@ -310,33 +341,34 @@ header nav ul li a:hover {
 
 .contact i {
     margin-right: 10px;
-   }
+}
 
 .contact h3 {
-  font-size: 35px;
-  text-decoration: underline;
-  padding-top:20px;
+    font-size: 35px;
+    text-decoration: underline;
+    padding-top: 20px;
 }
 
 .contact h4 {
-  font-size: 22px;
-  text-align: left;
-  padding-left: 120px;
-  padding-top: 15px;  
+    font-size: 22px;
+    text-align: left;
+    padding-left: 120px;
+    padding-top: 15px;
 }
 
 .contact p {
-  font-size: 18px;
-  text-align: left;
-  padding-left: 120px;
-  padding-top: 15px;
-  margin-bottom: 5px;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 120px;
+    padding-top: 15px;
+    margin-bottom: 5px;
 }
 
 .contact a {
- color: black;
- text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
+
 
 /* --------FOOTER-------- */
 
@@ -346,25 +378,29 @@ footer {
     background-color: black;
     color: white;
     font-size: 12px;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     text-align: center;
 }
 
-footer p{
+footer p {
     margin: 0 auto;
     background-color: black;
     color: white;
     font-size: 14px;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     text-align: center;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: white;
 }
 
-footer a i{
+footer a i {
     margin: 0 auto;
     padding: 10px;
     text-decoration: none;
@@ -374,34 +410,49 @@ footer a i{
 
 /* --------SAMSUNG-------- */
 
-.bigbox{
+.bigbox {
     width: 1000px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
     flex-flow: column;
 }
 
-.bigbox h3{
+.bigbox h3 {
     margin: 40px;
-    font-size: 30px; 
+    font-size: 30px;
     text-decoration: underline;
 }
 
-.description{
+.description {
     width: 300px;
     margin-bottom: 40px;
     border-left: 1px solid cyan;
     float: right;
     padding-left: 5px;
-    font-size: 18px;  
+    font-size: 18px;
 }
 
-.design{
+.design {
     width: 700px;
     margin: 0;
     float: left;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 }
 
@@ -412,25 +463,24 @@ footer a i{
 .design img {
     width: 200px;
     margin: 10px;
-} 
+}
 
 
 /* --------ATM-------- */
 
-.design .kiosk{
+.design .kiosk {
     width: 300px;
     margin-bottom: 40px;
-    
 }
 
 .design .atmcel {
     margin-bottom: 50px;
-} 
+}
 
 
 /* --------MOOD by Christofle-------- */
 
-.design .mood{
+.design .mood {
     width: 300px;
     margin-bottom: 20px;
 }
@@ -438,7 +488,7 @@ footer a i{
 
 /* --------CachoPan-------- */
 
-.design .cacho{
+.design .cacho {
     width: 400px;
     margin-bottom: 20px;
 }
@@ -446,7 +496,7 @@ footer a i{
 
 /* --------Braccialini-------- */
 
-.design .braccia{
+.design .braccia {
     width: 400px;
     margin-bottom: 20px;
 }
@@ -454,7 +504,7 @@ footer a i{
 
 /* --------Animated Menu-------- */
 
-.design .menuhb{
+.design .menuhb {
     width: 500px;
     margin-bottom: 20px;
 }
@@ -463,630 +513,530 @@ footer a i{
 /* --------------TABLET SIZE------------------------------- */
 
 @media (max-width: 1024px) {
-
-.body  {
-    width: 1024px;
-   }
-    
-header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: white;
-}
-
-header nav {
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-header nav ul li {
-    display: inline-block;
-    text-align: center;
-    background-color: white;
-    border-bottom: 2px solid yellow;
-    margin-left: -5px;
-}
-
-header nav ul li a {
-    padding: 5px 50px;
-    display: block;
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    border: 2px solid transparent;
-    border-bottom: none;
-}
-
-header nav ul li a:hover {
-   border: 2px solid yellow;
-    border-bottom: none;
-}
-    
-.container{
-    margin: 0 auto;
-    margin-top: 200px;
-    padding: 20px;
-    flex: 1 0 auto;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    
-}
-    
-    
-/*START - LITTLE DESCRIPTION*/
-    
-.start{
-    width: 650px;
-    height: 346px;
-    margin: 0 auto;
-    margin-top: 40px;
-    border: 10px double magenta;
-    display: flex;
-    flex-flow: row;
-}
-
-.start i {
-    margin-right: 10px;
-   }
-
-.right{
-    width: 400px;
-    font-size: 25px;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.right .small{    
-    font-size: 20px;
-    line-height: 55px;
-    text-align: left;
-    margin-left: 10px;
-}
-
-/*PROJECTS VIEW*/
-    
-#projects {
-    width: 650px;
-    height: auto;
-    margin-top: 50px;
-}
-
-#projects .boxes {
-    width:  650px;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-   
-}
-    
-#projects img {
-    width: 300px;
-    height: 300px;
-}     
-
-#projects div {
-    margin: 0;
-    margin-bottom: 20px;
-}
-
-#projects h2 {
-    font-size: 25px;
-    margin: 0;
-    padding: 0;
-}
-
-.gwm{
-    font-size: 18px; 
-    margin: 0;
-    padding: 0;
-   }
-
-.boxes div p {
-    font-size: 18px;   
-   }
-
-.boxes div p.tit2{    
-    font-size: 14px;   
-   }
-
-/*ABOUT - CV*/
-
-#about {
-    width: 650px;
-    height: auto;
-    margin-top: 50px;
-}
-.about {
-    width: 650px;
-    border: 4px double cyan;
-}
-
-#about h2 {
-    font-size: 25px;
-}
-
-#about .CV{
-    font-size: 18px;
-   }
-
-#about .PD {
-    font-size: 16px;
-   }
-
-#about h3 {
-    font-size: 16px;
-   }
-
-#about p {
-    font-size: 14px;
-   }
-
-#about li{
-    font-size: 14px;
-   } 
-    
-/*CONTACT*/
-
-#contact {
-    width: 650px;
-    height: auto;
-    margin-top: 50px;
-    
-}
-
-#contact h2 {
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.contact {
-    width: 650px;
-    height: 340px;
-    border: 4px double yellow;
-    
-}
-    
-.contact h3 {
-  font-size: 20px;
-  padding: 0;
-  margin: 0 auto;
-}
-
-.contact h4 {
-  font-size: 16px;
-  padding: 0;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.contact p {
-  font-size: 14px;
-  padding: 0;
-  margin-left: 8px;
-  line-height: 30px;
-}
-
-/*FOOTER*/
-
-footer {
-    margin-top: 50px;
-}
-
-
-footer p{
-    font-size: 12px;
-}
-
-footer a i{
-    padding: 5px;
-}
-    
-/*SAMSUNG*/
-
-.bigbox{
-    width: 650px;
-    display: flex;
-    flex-flow: column;
-}
-
-.bigbox h3{
-    margin: 20px;
-    font-size: 25px; 
-    text-decoration: underline;
-}
-
-.description{
-    width: 300px;
-    margin-bottom: 40px;
-    border-left: 1px solid cyan;
-    float: right;
-    padding-left: 5px;
-    font-size: 18px;  
-}
-
-.design{
-    width: 350px;
-    margin: 0;
-    float: left;
-    display:inline-block;
-    
-}
-
-.insidebox {
-    width: 100%;
-}
-
-.design img {
-    width: 150px;
-    margin: 10px;
-} 
-
-.design video {
-    width: 300px;
-    margin-top: 10px;
-    margin: 5px;
-}
-/* --------ATM-------- */
-
-.design .kiosk{
-    width: 300px;
-    margin-bottom: 5px;
-}
-
-.design .atmcel {
-    margin-bottom: 20px;
-} 
-
-
-/* --------MOOD by Christofle-------- */
-
-.design .mood{
-    width: 300px;
-    margin-bottom: 20px;
-}
-
-
-/* --------CachoPan-------- */
-
-.design .cacho{
-    width: 300px;
-    margin-bottom: 20px;
-}
-
-
-/* --------Braccialini-------- */
-
-.design .braccia{
-    width: 300px;
-    margin-bottom: 20px;
-}
-
-
-/* --------Animated Menu-------- */
-
-.design .menuhb{
-    width: 300px;
-    margin-bottom: 20px;
-}
-  
+    .body {
+        width: 1024px;
     }
-    
-
+    header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: white;
+    }
+    header nav {
+        text-align: center;
+    }
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    header nav ul li {
+        display: inline-block;
+        text-align: center;
+        background-color: white;
+        border-bottom: 2px solid yellow;
+        margin-left: -5px;
+    }
+    header nav ul li a {
+        padding: 5px 50px;
+        display: block;
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        border: 2px solid transparent;
+        border-bottom: none;
+    }
+    header nav ul li a:hover {
+        border: 2px solid yellow;
+        border-bottom: none;
+    }
+    .container {
+        margin: 0 auto;
+        margin-top: 200px;
+        padding: 20px;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    /*START - LITTLE DESCRIPTION*/
+    .start {
+        width: 650px;
+        height: 346px;
+        margin: 0 auto;
+        margin-top: 40px;
+        border: 10px double magenta;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+        flex-flow: row;
+    }
+    .start i {
+        margin-right: 10px;
+    }
+    .right {
+        width: 400px;
+        font-size: 25px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .right .small {
+        font-size: 20px;
+        line-height: 55px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    /*PROJECTS VIEW*/
+    #projects {
+        width: 650px;
+        height: auto;
+        margin-top: 50px;
+    }
+    #projects .boxes {
+        width: 650px;
+        margin: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    #projects img {
+        width: 300px;
+        height: 300px;
+    }
+    #projects div {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    #projects h2 {
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+    .gwm {
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+    .boxes div p {
+        font-size: 18px;
+    }
+    .boxes div p.tit2 {
+        font-size: 14px;
+    }
+    /*ABOUT - CV*/
+    #about {
+        width: 650px;
+        height: auto;
+        margin-top: 50px;
+    }
+    .about {
+        width: 650px;
+        border: 4px double cyan;
+    }
+    #about h2 {
+        font-size: 25px;
+    }
+    #about .CV {
+        font-size: 18px;
+    }
+    #about .PD {
+        font-size: 16px;
+    }
+    #about h3 {
+        font-size: 16px;
+    }
+    #about p {
+        font-size: 14px;
+    }
+    #about li {
+        font-size: 14px;
+    }
+    /*CONTACT*/
+    #contact {
+        width: 650px;
+        height: auto;
+        margin-top: 50px;
+    }
+    #contact h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .contact {
+        width: 650px;
+        height: 340px;
+        border: 4px double yellow;
+    }
+    .contact h3 {
+        font-size: 20px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .contact h4 {
+        font-size: 16px;
+        padding: 0;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .contact p {
+        font-size: 14px;
+        padding: 0;
+        margin-left: 8px;
+        line-height: 30px;
+    }
+    /*FOOTER*/
+    footer {
+        margin-top: 50px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    footer a i {
+        padding: 5px;
+    }
+    /*SAMSUNG*/
+    .bigbox {
+        width: 650px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+    .bigbox h3 {
+        margin: 20px;
+        font-size: 25px;
+        text-decoration: underline;
+    }
+    .description {
+        width: 300px;
+        margin-bottom: 40px;
+        border-left: 1px solid cyan;
+        float: right;
+        padding-left: 5px;
+        font-size: 18px;
+    }
+    .design {
+        width: 350px;
+        margin: 0;
+        float: left;
+        display: inline-block;
+    }
+    .insidebox {
+        width: 100%;
+    }
+    .design img {
+        width: 150px;
+        margin: 10px;
+    }
+    .design video {
+        width: 300px;
+        margin-top: 10px;
+        margin: 5px;
+    }
+    /* --------ATM-------- */
+    .design .kiosk {
+        width: 300px;
+        margin-bottom: 5px;
+    }
+    .design .atmcel {
+        margin-bottom: 20px;
+    }
+    /* --------MOOD by Christofle-------- */
+    .design .mood {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    /* --------CachoPan-------- */
+    .design .cacho {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    /* --------Braccialini-------- */
+    .design .braccia {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    /* --------Animated Menu-------- */
+    .design .menuhb {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+}
 
 
 /* --------------MOBILE SIZE------------------------------- */
 
 @media (max-width: 500px) {
-
-.body  {
-    margin: 0 auto;
-    width: 100%;
-   }
-
-.logo img {
-    margin: 0 auto;
-    padding-top: 5px;
-    width: 50px;
-}
-
-.logo h1 {
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-h1 {
-	font-size: 18px;
-   
-}
-    
-header {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-}
-    
-header nav ul li a {
-    font-size: 18px;
-}
-    
-header nav ul li {
-    display:block;
-    text-align: center;
-    margin: 2px;
-  }
-    
-.container {
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    padding: 0;
-   }
-    
-/*START - LITTLE DESCRIPTION*/
-    
-.start {
-    width: 250px;
-    height: 640px;
-    margin-top: 50px;
-    border: 8px double magenta;
-    display: flex;
-    flex-flow: column;
-}
-
-.start i {
-    margin-right: 10px;
-   }
-
-.start img {
-    width: 235px;
-   }
-
-.right{
-    width: 235px;
-    font-size: 21px;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.right .small{    
-    font-size: 18px;
-    line-height: 40px;
-    text-align: left;
-    margin-left: 10px;
-}
-
-/*PROJECTS VIEW*/
-    
-#projects {
-    width: 250px;
-    height: auto;
-    margin-top: 50px
-}
-
-#projects .boxes {
-    width:  250px;
-    margin: 0 auto;
-}
-
-#projects img {
-    width: 250px;
-    height: 250px;
-}     
-
-
-#projects h2 {
-    font-size: 21px;
-    margin: 0;
-    padding: 0;
-}
-
-.gwm{
-    font-size: 18px; 
-    margin: 0;
-    padding: 0;
-   }
-
-#projects div {
-    margin: 10px 0 10px 0;
-}
-
-.boxes div p {
-    font-size: 16px;   
-   }
-
-.boxes div p.tit2{    
-    font-size: 14px;   
-   }
-
-/*ABOUT - CV*/
-
-#about {
-    width: 250px;
-    height: auto;
-    margin-top: 50px;
-}
-.about {
-    width: 250px;
-    border: 4px double cyan;
-}
-
-#about h2 {
-    font-size: 21px;
-}
-
-#about .CV{
-    font-size: 18px;
-   }
-
-#about .PD {
-    font-size: 16px;
-   }
-
-#about h3 {
-    font-size: 16px;
-   }
-
-#about p {
-    font-size: 14px;
-   }
-
-#about li{
-    font-size: 14px;
-   } 
-    
-/*CONTACT*/
-
-#contact {
-    width: 250px;
-    height: auto;
-    margin-top: 50px;
-    
-}
-
-#contact h2 {
-    font-size: 21px;
-    margin-bottom: 20px;
-}
-
-.contact {
-    width: 250px;
-    height: 340px;
-    border: 4px double yellow;
-    
-}
-    
-.contact h3 {
-  font-size: 20px;
-  padding: 0;
-  margin: 0 auto;
-}
-
-.contact h4 {
-  font-size: 16px;
-  padding: 0;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.contact p {
-  font-size: 14px;
-  padding: 0;
-  margin-left: 8px;
-  line-height: 30px;
-}
-
-/*FOOTER*/
-
-footer {
-    margin-top: 50px;
-}
-
-
-footer p{
-    font-size: 12px;
-}
-
-footer a i{
-    padding: 5px;
-}
-    
-/*SAMSUNG*/
-
-.bigbox{
-    width: 250px;
-    display: flex;
-    flex-flow: column;
-}
-
-.bigbox h3{
-    margin:0 auto;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    font-size: 21px; 
-}
-
-.description{
-    width:250px;
-    border-left: 1px solid cyan;
-    font-size: 14px; 
-    margin: 0;
-    margin-top: 10px;
-    padding: 0;
-}
-
-.design{
-    width: 250px;
-}
-
-.insidebox {
-    width: 100%;
-}
-
-.design img {
-    width: 250px;
-    margin-top: 10px;
-    margin: 5px;
-} 
-    
-.design video {
-    width: 250px;
-    margin-top: 10px;
-    margin: 5px;
-} 
-    
-/* --------ATM-------- */
-
-.design .kiosk{
-    width: 250px;
-    margin-bottom: 5px;
-}
-
-.design .atmcel {
-    margin-bottom: 20px;
-} 
-
-
-/* --------MOOD by Christofle-------- */
-
-.design .mood{
-    width: 250px;
-    margin-bottom: 20px;
-}
-
-
-/* --------CachoPan-------- */
-
-.design .cacho{
-    width: 250px;
-    margin-bottom: 20px;
-}
-
-
-/* --------Braccialini-------- */
-
-.design .braccia{
-    width: 250px;
-    margin-bottom: 20px;
-}
-
-
-/* --------Animated Menu-------- */
-
-.design .menuhb{
-    width: 250px;
-    margin-bottom: 20px;
-}
-  
+    .body {
+        margin: 0 auto;
+        width: 100%;
     }
-    
+    .logo img {
+        margin: 0 auto;
+        padding-top: 5px;
+        width: 50px;
+    }
+    .logo h1 {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    header {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    header nav ul li a {
+        font-size: 18px;
+    }
+    header nav ul li {
+        display: block;
+        text-align: center;
+        margin: 2px;
+    }
+    .container {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0;
+    }
+    /*START - LITTLE DESCRIPTION*/
+    .start {
+        width: 250px;
+        height: 640px;
+        margin-top: 50px;
+        border: 8px double magenta;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+    .start i {
+        margin-right: 10px;
+    }
+    .start img {
+        width: 235px;
+    }
+    .right {
+        width: 235px;
+        font-size: 21px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .right .small {
+        font-size: 18px;
+        line-height: 40px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    /*PROJECTS VIEW*/
+    #projects {
+        width: 250px;
+        height: auto;
+        margin-top: 50px
+    }
+    #projects .boxes {
+        width: 250px;
+        margin: 0 auto;
+    }
+    #projects img {
+        width: 250px;
+        height: 250px;
+    }
+    #projects h2 {
+        font-size: 21px;
+        margin: 0;
+        padding: 0;
+    }
+    .gwm {
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+    #projects div {
+        margin: 10px 0 10px 0;
+    }
+    .boxes div p {
+        font-size: 16px;
+    }
+    .boxes div p.tit2 {
+        font-size: 14px;
+    }
+    /*ABOUT - CV*/
+    #about {
+        width: 250px;
+        height: auto;
+        margin-top: 50px;
+    }
+    .about {
+        width: 250px;
+        border: 4px double cyan;
+    }
+    #about h2 {
+        font-size: 21px;
+    }
+    #about .CV {
+        font-size: 18px;
+    }
+    #about .PD {
+        font-size: 16px;
+    }
+    #about h3 {
+        font-size: 16px;
+    }
+    #about p {
+        font-size: 14px;
+    }
+    #about li {
+        font-size: 14px;
+    }
+    /*CONTACT*/
+    #contact {
+        width: 250px;
+        height: auto;
+        margin-top: 50px;
+    }
+    #contact h2 {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+    .contact {
+        width: 250px;
+        height: 340px;
+        border: 4px double yellow;
+    }
+    .contact h3 {
+        font-size: 20px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .contact h4 {
+        font-size: 16px;
+        padding: 0;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .contact p {
+        font-size: 14px;
+        padding: 0;
+        margin-left: 8px;
+        line-height: 30px;
+    }
+    /*FOOTER*/
+    footer {
+        margin-top: 50px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    footer a i {
+        padding: 5px;
+    }
+    /*SAMSUNG*/
+    .bigbox {
+        width: 250px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+    .bigbox h3 {
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 21px;
+    }
+    .description {
+        width: 250px;
+        border-left: 1px solid cyan;
+        font-size: 14px;
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+    }
+    .design {
+        width: 250px;
+    }
+    .insidebox {
+        width: 100%;
+    }
+    .design img {
+        width: 250px;
+        margin-top: 10px;
+        margin: 5px;
+    }
+    .design video {
+        width: 250px;
+        margin-top: 10px;
+        margin: 5px;
+    }
+    /* --------ATM-------- */
+    .design .kiosk {
+        width: 250px;
+        margin-bottom: 5px;
+    }
+    .design .atmcel {
+        margin-bottom: 20px;
+    }
+    /* --------MOOD by Christofle-------- */
+    .design .mood {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    /* --------CachoPan-------- */
+    .design .cacho {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    /* --------Braccialini-------- */
+    .design .braccia {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    /* --------Animated Menu-------- */
+    .design .menuhb {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+}
