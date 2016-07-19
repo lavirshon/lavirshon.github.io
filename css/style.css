@@ -819,6 +819,12 @@ footer a i {
         text-align: center;
         margin: 2px;
     }
+    
+header.collapsed {
+    width: 200px;
+    position: static;
+}
+    
     .container {
         width: 100%;
         display: -webkit-box;
