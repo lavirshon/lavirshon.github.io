@@ -820,9 +820,12 @@ footer a i {
         margin: 2px;
     }
     
-header.collapsed {
-    width: 200px;
-    position: static;
+header.collapsed > div {
+  height: 130px;
+}
+    
+header.collapsed .logo {
+  margin-bottom: 1em;
 }
     
     .container {
