@@ -1056,10 +1056,18 @@ header.collapsed .logo {
         margin: 5px;
     }
     .design video {
-        width: 290px;
+        width: 250px;
         margin-top: 10px;
         margin-left: -20px;
+        margin: 0 auto;
     }
+    
+     .design .game {
+        width: 290px;
+        margin: 0 auto;
+        margin-left:-15px;
+    }
+    
     /* --------ATM-------- */
     .design .kiosk {
         width: 250px;
