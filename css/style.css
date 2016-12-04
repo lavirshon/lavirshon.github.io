@@ -526,6 +526,11 @@ footer a i {
     margin-bottom: 20px;
 }
 
+/* --------Nike-------- */
+
+.design .nikecamp {
+    margin-bottom: 50px;
+}
 
 /* --------------TABLET SIZE------------------------------- */
 
@@ -805,6 +810,11 @@ footer a i {
         width: 300px;
         margin-bottom: 20px;
     }
+    
+    /* --------Nike-------- */
+    .design .nikecamp {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -840,8 +850,7 @@ footer a i {
     header nav ul li a {
         font-size: 18px;  
          }
-   
-    
+      
     
     header nav ul li {
         display: block;
@@ -1094,6 +1103,11 @@ header.collapsed .logo {
     /* --------Animated Menu-------- */
     .design .menuhb {
         width: 250px;
+        margin-bottom: 20px;
+    }
+    
+    /* --------Nike-------- */
+    .design .nikecamp {
         margin-bottom: 20px;
     }
 }
