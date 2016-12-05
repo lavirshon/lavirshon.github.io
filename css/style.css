@@ -494,6 +494,11 @@ footer a i {
     margin-bottom: 50px;
 }
 
+.design .atmcelu {
+    margin-bottom: 50px;
+    width: 300px;
+}
+
 
 /* --------MOOD by Christofle-------- */
 
@@ -530,6 +535,24 @@ footer a i {
 
 .design .nikecamp {
     margin-bottom: 50px;
+}
+
+
+/* --------Pasta Verrigni-------- */
+
+.design .pasta {
+    width: 350px;
+    margin-bottom: 40px;
+}
+
+.design .pastaver {
+    margin-bottom: 50px;
+}
+
+.design .pastaveri {
+    margin-bottom: 50px;
+    width: 300px;
+    
 }
 
 /* --------------TABLET SIZE------------------------------- */
@@ -790,6 +813,12 @@ footer a i {
     .design .atmcel {
         margin-bottom: 20px;
     }
+    
+    .design .atmcelu {
+    margin-bottom: 20px;
+    width: 250px;
+    }
+    
     /* --------MOOD by Christofle-------- */
     .design .mood {
         width: 300px;
@@ -815,6 +844,20 @@ footer a i {
     .design .nikecamp {
         margin-bottom: 20px;
     }
+    
+    /* --------Pasta Verrigni-------- */
+    .design .pasta {
+        width: 300px;
+        margin-bottom: 5px;
+    }
+    .design .pastever {
+        margin-bottom: 20px;
+    }
+    
+    .design .pastaveri {
+    margin-bottom: 20px;
+    width: 250px;
+   }
 }
 
 
@@ -1085,6 +1128,12 @@ header.collapsed .logo {
     .design .atmcel {
         margin-bottom: 20px;
     }
+    
+    .design .atmcelu {
+    margin-bottom: 20px;
+    width: 200px;
+    }
+    
     /* --------MOOD by Christofle-------- */
     .design .mood {
         width: 250px;
@@ -1110,4 +1159,17 @@ header.collapsed .logo {
     .design .nikecamp {
         margin-bottom: 20px;
     }
+    
+     /* --------Pasta Verrigni-------- */
+    .design .pasta {
+        width: 250px;
+        margin-bottom: 5px;
+    }
+    .design .pastever {
+        margin-bottom: 20px;
+    }
+     .design .pastaveri {
+    margin-bottom: 20px;
+    width: 200px;
+   }
 }
