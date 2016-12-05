@@ -555,6 +555,27 @@ footer a i {
     
 }
 
+/* --------RayBan-------- */
+
+.design .ray {
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.design .rayd {
+    margin-bottom: 50px;
+}
+
+.design .raym {
+    margin-bottom: 50px;
+    width: 600px;
+}
+
+.goals {
+    margin-left: 20px;
+    
+}
+
 /* --------------TABLET SIZE------------------------------- */
 
 @media (max-width: 1024px) {
@@ -855,6 +876,21 @@ footer a i {
     }
     
     .design .pastaveri {
+    margin-bottom: 20px;
+    width: 250px;
+   }
+    
+   /* --------RayBan-------- */
+    .design .ray {
+        width: 250px;
+        margin-bottom: 5px;
+    }
+    .design .rayd {
+        margin-bottom: 20px;
+        width: 250px;
+    }
+    
+    .design .raym {
     margin-bottom: 20px;
     width: 250px;
    }
@@ -1169,6 +1205,20 @@ header.collapsed .logo {
         margin-bottom: 20px;
     }
      .design .pastaveri {
+    margin-bottom: 20px;
+    width: 200px;
+   }
+    
+   /* --------RayBan-------- */
+    .design .ray {
+        width: 200px;
+        margin-bottom: 5px;
+    }
+    .design .rayd {
+        margin-bottom: 20px;
+        width: 200px;
+    }
+     .design .raym {
     margin-bottom: 20px;
     width: 200px;
    }
