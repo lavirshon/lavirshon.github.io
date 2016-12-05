@@ -482,6 +482,10 @@ footer a i {
     margin: 10px;
 }
 
+.design .game {
+    width: 280px;
+   }
+
 
 /* --------ATM-------- */
 
@@ -826,6 +830,8 @@ footer a i {
         margin-top: 10px;
         margin: 5px;
     }
+    
+ 
     /* --------ATM-------- */
     .design .kiosk {
         width: 300px;
@@ -1156,6 +1162,7 @@ header.collapsed .logo {
         margin-left:-15px;
     }
     
+     
     /* --------ATM-------- */
     .design .kiosk {
         width: 250px;
